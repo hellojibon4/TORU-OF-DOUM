@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rour of Dom</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <style>
+        h1 {
+            color: yellowgreen;
+            background-color: blanchedalmond;
+        }
+
+        #food-titel {
+            color: aquamarine;
+        }
+        .bold {
+            font-weight: 100px;
+        }
+
+        .
+
+
+        .food .foreimg {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> This is my hedar now bennar</h1>
+    </header>
+    <main>
+        <section id="old-dhaka" class="songs">
+            <h1> Welcome to my Dom</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum animi fugit debitis ipsum atque
+                exercitationem numquam iure, <span>oli goli</span> excepturi culpa aut corrupti architecto quia fugiat
+                labore quidem cumque <span>earum</span> nostrum? Tempora.</p>
+            <p> dvnjlivn vj kvrjije nlijvmd vf jfd dknvdji jibon khan md maksudur rahman jibon <span> jibon</span></p>
+            <ul>
+                <li>Name</li>
+                <li>Roll</li>
+                <li>Regi</li>
+                <li>jalali det </li>
+                <li>Dm dere baba</li>
+            </ul>
+        </section>
+    </main>
+
+    <section class="food">
+        <h1 id="food-titel"> food i love</h1>
+        <ul>
+            <li>DAl</li>
+            <li>pasta</li>
+            <li> barger</li>
+            <li class="foreimg">pigja</li>
+            <li class="foreimg">Ege</li>
+            <li class="foreimg">fish</li>
+            <li class="foreimg">Rice</li>
+        </ul>
+    </section>
+
+    <script>
+        // console.log("Hello from javadcript!")
+        // console.log("Hello bole cole gelo")
+        // console.log("document Object model")
+        const student = {
+            name: 'Abul mia',
+            id: 123,
+            study: function (subject) {
+                console.log('studying subject: ', subject);
+            }
+        }
+        const licollection = document.getElementsByTagName('li');
+        console.log(licollection);
+        for (const li of licollection) {
+            console.log(li.innerText)
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const heading of allHeadings) {
+            console.log(heading.innerText);
+        }
+
+        const foodTitelH1 = document.getElementById('food-titel');
+        console.log(foodTitelH1);
+
+        // query selector all
+        const spanElement = document.querySelectorAll("#old-dhaka p span")
+        for (const span of spanElement) {
+            console.log(span.innerText)
+        }
+
+    </script>
+    <script src="./js/hello.js"></script>
+</body>
+
+</html>
